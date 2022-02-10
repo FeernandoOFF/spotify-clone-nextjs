@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.textGradient{
+  -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+  @apply bg-gradient-to-r from-indigo-500 to-purple-400 
+}
+.menu-title{
+  @apply  text-xs  pl-4 font-semibold text-gray-300
+}
+.link-active::before{
+  content:"";
+  position:absolute;
+  left:0; 
+  top: -.7rem;
+  height: 3.24rem;
+  border-radius: 0 10px 10px 0;
+  width: 7px;
+@apply bg-primary
+}
+.link-active{
+  position: relative;
+}
+
+.sidebar-section{
+  @apply mt-20 flex justify-between flex-col
+}
