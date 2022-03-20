@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html::-webkit-scrollbar{
+  display: none;
+}
+
 .textGradient{
   -webkit-background-clip: text; 
   -webkit-text-fill-color: transparent; 
@@ -26,4 +30,10 @@
 
 .sidebar-section{
   @apply mt-20 flex justify-between flex-col
+}
+.scroll-area::-webkit-scrollbar {
+  display: none;
+}
+.ant-switch-checked{
+  @apply bg-indigo-500
 }
